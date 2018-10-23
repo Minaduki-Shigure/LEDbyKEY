@@ -1,0 +1,727 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 17812
+License: Customer
+
+Current time: 	Tue Oct 23 19:42:13 CST 2018
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 27 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	wukan
+User home directory: C:/Users/wukan
+User working directory: D:/Vivado Projects/LEDbyKEY
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/wukan/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/wukan/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/wukan/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Vivado Projects/LEDbyKEY/vivado.log
+Vivado journal file location: 	D:/Vivado Projects/LEDbyKEY/vivado.jou
+Engine tmp dir: 	D:/Vivado Projects/LEDbyKEY/.Xil/Vivado-17812-Player
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 580 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 75 MB (+76454kb) [00:00:07]
+// [Engine Memory]: 494 MB (+366336kb) [00:00:07]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: D:\Vivado Projects\LEDbyKEY\LEDbyKEY.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 573 MB (+57178kb) [00:00:09]
+// Tcl Message: open_project {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 580 MB. GUI used memory: 34 MB. Current time: 10/23/18 7:42:15 PM CST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 611 MB (+9614kb) [00:00:12]
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 856.770 ; gain = 120.879 
+// Project name: LEDbyKEY; location: D:/Vivado Projects/LEDbyKEY; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 644 MB (+2223kb) [00:00:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 38 MB. Current time: 10/23/18 7:42:30 PM CST
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "led"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/sources_1/new/led.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/sources_1/new/led.v}} 
+// I (ck): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "CLK", 0, "Port Name", 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 0, "Direction", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "data", 1, "Port Name", 0); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 1, "Direction", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 1, "Direction", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led", 2, "Port Name", 0); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; input ; false ; 0 ; 0", 2, "input", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 2, "Direction", 1); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 2, "Direction", 1); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "data ; input ; false ; 0 ; 0", 1, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "data ; input ; true ; 0 ; 0", 1, "0", 3); // ab (O, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "3", 1, "MSB", 3); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; output ; false ; 0 ; 0", 2, "false", 2); // ab (O, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "led ; output ; true ; 0 ; 0", 2, "0", 3); // ab (O, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "15", 2, "MSB", 3); // ab (O, I)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led (led.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, led (led.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 676 MB (+312kb) [00:00:55]
+selectCodeEditor("led.v", 109, 225); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("led.v", 117, 219); // ce (w, ck)
+selectCodeEditor("led.v", 129, 241); // ce (w, ck)
+selectCodeEditor("led.v", 75, 265); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("led.v", 83, 230); // ce (w, ck)
+selectCodeEditor("led.v", 97, 242); // ce (w, ck)
+// [GUI Memory]: 82 MB (+3094kb) [00:02:07]
+// Elapsed time: 21 seconds
+selectCodeEditor("led.v", 96, 183); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "led.v", 'v'); // ce (w, ck)
+selectCodeEditor("led.v", 312, 145); // ce (w, ck)
+selectCodeEditor("led.v", 303, 165); // ce (w, ck)
+selectCodeEditor("led.v", 293, 185); // ce (w, ck)
+selectCodeEditor("led.v", 288, 200); // ce (w, ck)
+selectCodeEditor("led.v", 280, 218); // ce (w, ck)
+selectCodeEditor("led.v", 273, 232); // ce (w, ck)
+selectCodeEditor("led.v", 265, 255); // ce (w, ck)
+selectCodeEditor("led.v", 257, 163); // ce (w, ck)
+selectCodeEditor("led.v", 243, 181); // ce (w, ck)
+selectCodeEditor("led.v", 248, 181); // ce (w, ck)
+selectCodeEditor("led.v", 240, 201); // ce (w, ck)
+selectCodeEditor("led.v", 235, 217); // ce (w, ck)
+selectCodeEditor("led.v", 230, 233); // ce (w, ck)
+selectCodeEditor("led.v", 215, 149); // ce (w, ck)
+selectCodeEditor("led.v", 213, 164); // ce (w, ck)
+selectCodeEditor("led.v", 205, 185); // ce (w, ck)
+selectCodeEditor("led.v", 198, 196); // ce (w, ck)
+selectCodeEditor("led.v", 95, 159); // ce (w, ck)
+selectCodeEditor("led.v", 97, 179); // ce (w, ck)
+selectCodeEditor("led.v", 97, 194); // ce (w, ck)
+selectCodeEditor("led.v", 93, 216); // ce (w, ck)
+selectCodeEditor("led.v", 99, 215); // ce (w, ck)
+selectCodeEditor("led.v", 99, 215); // ce (w, ck)
+selectCodeEditor("led.v", 99, 216); // ce (w, ck)
+selectCodeEditor("led.v", 95, 127); // ce (w, ck)
+selectCodeEditor("led.v", 96, 145); // ce (w, ck)
+selectCodeEditor("led.v", 95, 157); // ce (w, ck)
+selectCodeEditor("led.v", 97, 169); // ce (w, ck)
+selectCodeEditor("led.v", 93, 177); // ce (w, ck)
+selectCodeEditor("led.v", 98, 177); // ce (w, ck)
+selectCodeEditor("led.v", 97, 195); // ce (w, ck)
+selectCodeEditor("led.v", 97, 211); // ce (w, ck)
+selectCodeEditor("led.v", 92, 237); // ce (w, ck)
+selectCodeEditor("led.v", 95, 236); // ce (w, ck)
+selectCodeEditor("led.v", 94, 202); // ce (w, ck)
+selectCodeEditor("led.v", 98, 220); // ce (w, ck)
+selectCodeEditor("led.v", 97, 236); // ce (w, ck)
+selectCodeEditor("led.v", 97, 253); // ce (w, ck)
+// [GUI Memory]: 87 MB (+979kb) [00:03:22]
+// [GUI Memory]: 93 MB (+1683kb) [00:03:25]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("led.v", 106, 65); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 16 seconds
+selectCodeEditor("led.v", 451, 162); // ce (w, ck)
+// [GUI Memory]: 99 MB (+901kb) [00:04:50]
+// Elapsed time: 225 seconds
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "I/O and Clock Planning", true); // OverlayTextField (J, ck)
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", (String) null); // OverlayTextField (J, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, key (key.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, key (key.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 105 MB (+1409kb) [00:07:44]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 54 MB. Current time: 10/23/18 7:49:50 PM CST
+// Elapsed time: 76 seconds
+selectCodeEditor("top.v", 119, 204); // ce (w, ck)
+// Elapsed time: 63 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 52 seconds
+selectCodeEditor("top.v", 119, 143); // ce (w, ck)
+selectCodeEditor("top.v", 145, 239); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("top.v", 129, 216); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 37 seconds
+selectCodeEditor("top.v", 390, 193); // ce (w, ck)
+selectCodeEditor("top.v", 341, 224); // ce (w, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Tue Oct 23 19:53:54 2018] Launched synth_1... Run output will be captured here: D:/Vivado Projects/LEDbyKEY/LEDbyKEY.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 353ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 23 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+// bx (ck):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a35tcpg236-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 777 MB. GUI used memory: 54 MB. Current time: 10/23/18 7:54:20 PM CST
+// [Engine Memory]: 838 MB (+134477kb) [00:12:18]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,008 MB. GUI used memory: 53 MB. Current time: 10/23/18 7:54:25 PM CST
+// [Engine Memory]: 1,009 MB (+135568kb) [00:12:22]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,082 MB (+23564kb) [00:12:22]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 112 MB (+2361kb) [00:12:23]
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1290.250 ; gain = 378.570 
+// 'dP' command handler elapsed time: 10 seconds
+// Elapsed time: 11 seconds
+dismissDialog("Open Synthesized Design"); // bx (ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+// [Engine Memory]: 1,144 MB (+7836kb) [00:12:29]
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (led) elapsed time: 0.5s
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 6, "led (16)", 0, true); // z (O, ck) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 6); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 23); // z (O, ck)
+// [Engine Memory]: 1,203 MB (+1726kb) [00:12:34]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (1) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 28); // z (O, ck)
+// [Engine Memory]: 1,277 MB (+14650kb) [00:12:36]
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "CLK ; IN ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 29, (String) null, 3, false); // z (O, ck)
+// [GUI Memory]: 120 MB (+1997kb) [00:12:37]
+// [Engine Memory]: 1,489 MB (+154951kb) [00:12:37]
+// RouteApi::initDelayMediator elapsed time: 13.5s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// [Engine Memory]: 1,585 MB (+23321kb) [00:12:39]
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports CLK W5 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "CLK ; IN ;  ; W5 ; true ; 34 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 29, "default (LVCMOS18)", 6, false); // z (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,585 MB. GUI used memory: 88 MB. Current time: 10/23/18 7:54:45 PM CST
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row[0] ; IN ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 27, (String) null, 3, false); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "CLK ; IN ;  ; W5 ; true ; 34 ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 29, "default (LVCMOS18)", 6, false); // z (O, ck)
+// Tcl Message: set_property package_pin "" [get_ports [list  {row[0]}]] 
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list CLK]] 
+// [GUI Memory]: 127 MB (+733kb) [00:12:58]
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 6); // z (O, ck)
+// [GUI Memory]: 135 MB (+1908kb) [00:13:00]
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 7); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1, "default (LVCMOS18)", 6, true); // z (O, ck) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {col[3]} {col[2]} {col[1]} {col[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2, "default (LVCMOS18)", 6, true); // z (O, ck) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {led[15]} {led[14]} {led[13]} {led[12]} {led[11]} {led[10]} {led[9]} {led[8]} {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]] 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ;  ;  ; NONE ; NONE ; ", 3, "default (LVCMOS18)", 6, true); // z (O, ck) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {row[3]} {row[2]} {row[1]} {row[0]}]] 
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'key_value_1_reg' [D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/sources_1/new/key.v:108]. ]", 1, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-327] inferring latch for variable 'key_value_1_reg' [D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/sources_1/new/key.v:108]. ]", 1, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Constraints 18-5210] No constraint will be written out.. ]", 2, false); // ah (O, ck)
+selectTab((HResource) null, (HResource) null, "I/O Ports", 6); // aE (Q, ck)
+// Elapsed time: 33 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 5244, 2213); // B (C, ck)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 648, 164, 845, 360); // A (k, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[15] ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3, (String) null, 3, false); // z (O, ck)
+// [GUI Memory]: 142 MB (+267kb) [00:14:13]
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[15]} L1 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[14]} P1 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[13]} N3 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[12]} P3 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[11]} U3 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[10]} W3 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[9]} V3 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[8]} V13 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[7]} V14 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[6]} U14 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[5]} U15 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[4]} W18 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[3]} V19 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[2]} E19 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[1]} U16 
+// Elapsed time: 47 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[2] ; OUT ;  ; E19 ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 16, "E19", 3, false); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[2]} U19 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[1]} E19 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[0]} V16 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2, "led (16)", 0, true); // z (O, ck) - Node
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2); // z (O, ck)
+// Elapsed time: 31 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_PACKAGE, 6135, 2713); // B (C, ck)
+selectView(PAResourceOtoP.PAViews_PACKAGE, "Package", 714, 201, 845, 360); // A (k, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1, (String) null, 2, true); // z (O, ck) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1, (String) null, 2, true); // z (O, ck) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1, (String) null, 3, true); // z (O, ck) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1, (String) null, 3, true); // z (O, ck) - Node
+// [GUI Memory]: 149 MB (+198kb) [00:16:41]
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col[2] ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 3, (String) null, 2, false); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col[3] ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2, (String) null, 2, false); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col[3] ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2); // z (O, ck)
+// [GUI Memory]: 157 MB (+293kb) [00:16:54]
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col[3] ; OUT ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 2, (String) null, 3, false); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {col[3]} H1 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {col[2]} K2 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {col[1]} H2 
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {col[1]} G3 
+// Elapsed time: 20 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col[1] ; OUT ;  ; G3 ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 4, "G3", 3, false); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {col[1]} H2 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {col[0]} G3 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// Elapsed time: 42 seconds
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "Scalar ports (1) ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; ", 4); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 3); // z (O, ck)
+// Elapsed time: 17 seconds
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row[3] ; IN ;  ;  ;  ;  ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 4, (String) null, 3, false); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {row[3]} J1 
+// Elapsed time: 12 seconds
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {row[2]} L2 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {row[1]} J2 
+applyEnter(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, (String) null); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {row[0]} G2 
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 3, "row (4)", 0, true); // z (O, ck) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 3, "NONE", 11, true); // z (O, ck) - Node
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; NONE ; NONE ; ", 3, "NONE", 11, true); // z (O, ck) - Node
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property PULLTYPE PULLUP [get_ports [list {row[3]} {row[2]} {row[1]} {row[0]}]] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (ck): Out of Date Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// a (ck): Save Constraints: addNotify
+dismissDialog("Out of Date Design"); // A (ck)
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateConstraintsFilePanel_FILE_NAME, "xdcii"); // X (C, a)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bx (ck):  Save Constraints : addNotify
+// Tcl Message: file mkdir {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/constrs_1/new} 
+// Tcl Message: close [ open {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/constrs_1/new/xdcii.xdc} w ] 
+// Tcl Message: add_files -fileset constrs_1 {{D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/constrs_1/new/xdcii.xdc}} 
+// Tcl Message: set_property target_constrs_file {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.srcs/constrs_1/new/xdcii.xdc} [current_fileset -constrset] 
+// TclEventType: DESIGN_SAVE
+dismissDialog("Save Constraints"); // a (ck)
+// Tcl Message: save_constraints -force 
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Save Constraints"); // bx (ck)
+// Elapsed time: 22 seconds
+selectTab((HResource) null, (HResource) null, "Package Pins", 5); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aE (Q, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,606 MB. GUI used memory: 80 MB. Current time: 10/23/18 8:01:35 PM CST
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ck)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Oct 23 20:01:46 2018] Launched synth_1... Run output will be captured here: D:/Vivado Projects/LEDbyKEY/LEDbyKEY.runs/synth_1/runme.log [Tue Oct 23 20:01:46 2018] Launched impl_1... Run output will be captured here: D:/Vivado Projects/LEDbyKEY/LEDbyKEY.runs/impl_1/runme.log 
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 77 seconds
+selectTab((HResource) null, (HResource) null, "I/O Ports", 6); // aE (Q, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 58 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; PULLUP ; NONE ; ", 3); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "col (4) ; OUT ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 1); // z (O, ck)
+// Elapsed time: 88 seconds
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "row (4) ; IN ;  ;  ; true ; 35 ; LVCMOS33 ; 3.3 ;  ;  ;  ; PULLUP ; NONE ; ", 7); // z (O, ck)
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37F22A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,226 MB. GUI used memory: 81 MB. Current time: 10/23/18 8:06:25 PM CST
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// [Engine Memory]: 2,226 MB (+588787kb) [00:24:22]
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15, true); // u (O, ck) - Node
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 6); // z (O, ck)
+collapseTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 6); // z (O, ck)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led (16) ; OUT ;  ;  ; true ; (Multiple) ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 6); // z (O, ck)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "led[0] ; OUT ;  ; V16 ; true ; 14 ; LVCMOS33 ; 3.3 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 22, "V16", 3, false); // z (O, ck)
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// Tcl Message: place_ports {led[0]} U16 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_DESIGN
+// A (ck): Out of Date Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Out of Date Design"); // A (ck)
+// TclEventType: DESIGN_SAVE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: save_constraints -force 
+dismissDialog("Save Constraints"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Implementation is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Implementation is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Oct 23 20:07:19 2018] Launched impl_1... Run output will be captured here: D:/Vivado Projects/LEDbyKEY/LEDbyKEY.runs/impl_1/runme.log 
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 77 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// aI (ck): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_REMIND_ME_LATER, "Remind me Later"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {D:/Vivado Projects/LEDbyKEY/LEDbyKEY.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37F22A 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 18 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)

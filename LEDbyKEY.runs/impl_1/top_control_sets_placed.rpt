@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Oct 23 20:07:56 2018
+| Host         : Player running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    18 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      8 |            1 |
+|     12 |            2 |
+|    16+ |            4 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              44 |            8 |
+| Yes          | No                    | No                     |              44 |           10 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------+------------------------------------+----------------------------+------------------+----------------+
+|            Clock Signal            |            Enable Signal           |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------------------+------------------------------------+----------------------------+------------------+----------------+
+|  my_key/CLK_500K_reg_n_0           |                                    |                            |                1 |              2 |
+|  CLK_IBUF_BUFG                     |                                    |                            |                1 |              4 |
+|  my_key/key_value_1_reg[3]_i_2_n_0 |                                    |                            |                1 |              8 |
+|  my_key/CLK_500K_reg_n_0           | my_key/FSM_onehot_state[5]_i_1_n_0 |                            |                2 |             12 |
+|  CLK_IBUF_BUFG                     |                                    | my_key/CLK_500K            |                2 |             12 |
+|  my_key/CLK_500K_reg_n_0           | my_key/col_reg                     |                            |                3 |             16 |
+|  my_key/CLK_500K_reg_n_0           | my_key/col_1[3]_i_1_n_0            |                            |                5 |             16 |
+|  CLK_IBUF_BUFG                     |                                    | my_key/Q[3]                |                3 |             16 |
+|  CLK_IBUF_BUFG                     |                                    | my_led/led_reg[15]_i_1_n_0 |                3 |             16 |
++------------------------------------+------------------------------------+----------------------------+------------------+----------------+
+
+
